@@ -1,0 +1,757 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: whitesmoke; */
+  margin: 0;
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+  /* box-sizing: border-box; */
+}
+body {
+  background-color: whitesmoke;
+}
+
+/* Nav Bar */
+.nav_bar {
+  height: 80px;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  background-color: whitesmoke;
+}
+.logo {
+  /* position: fixed; */
+  height: 75px;
+  /* margin-left: 0px; */
+  /* left: 40px; */
+}
+.nav_bar a {
+  color: rgb(36, 76, 128);
+  text-decoration: none;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  padding: 10px;
+  /* font-weight: 600; */
+}
+
+.nav_bar a:hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.loginAndlinks {
+  /* position: fixed; */
+  /* right: 40px; */
+  /* top: 25px; */
+  display: flex;
+  align-items: center;
+}
+.login {
+  border: none;
+  background-color: rgb(22, 50, 91);
+  color: whitesmoke;
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.login:hover {
+  background-color: rgb(36, 76, 128);
+}
+.nav_bar a.active {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* Home Page */
+/* Home Page First Section */
+.first_section {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+.first_section .text_content {
+  max-width: 65%;
+}
+.first_section h1,
+.first_section h2,
+.first_section p,
+.first_section .get_started {
+  margin: 10px 0;
+}
+.first_section h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(22, 50, 91);
+}
+.first_section h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.first_section p {
+  text-align: justify;
+  padding: 20px 0px;
+  line-height: 26px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.first_section .get_started {
+  background-color: rgb(22, 50, 91);
+  color: whitesmoke;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+}
+.first_section .get_started:hover {
+  background-color: rgb(36, 76, 128);
+}
+
+.first_section img {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Home Page Cards */
+.cards_row {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 50px;
+}
+.cards_row .card1,
+.cards_row .card2,
+.cards_row .card3 {
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.215);
+  padding: 10px 20px;
+  text-align: justify;
+  flex-basis: 24%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.cards_row .card4 {
+  border: 1px solid rgba(0, 0, 0, 0.215);
+  padding: 10px 20px;
+  text-align: justify;
+  flex-basis: 24%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.cards_row .card1:hover,
+.cards_row .card2:hover,
+.cards_row .card4:hover,
+.cards_row .card3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9; /* Subtle background change */
+}
+.cards_row .card-title {
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.cards_row .btn {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgb(22, 50, 91);
+  border: none;
+  /* margin-top: auto; */
+}
+
+/* Booking Free Therapy Form */
+.book_therapy {
+  border: 2px solid rgb(69, 69, 69);
+  padding: 40px;
+  margin: 0px 50px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_therapy h1 {
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.book_therapy .left-column,
+.book_therapy .right-column {
+  width: 45%;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.book_therapy .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.book_therapy label {
+  width: 30%; /* Adjust the percentage as needed */
+  font-weight: bold;
+  text-align: left;
+}
+
+.book_therapy input {
+  width: 70%; /* Make input fields take up the remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book_therapy button {
+  width: 500px;
+  padding: 10px;
+  background-color: rgb(22, 50, 91);
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.book_therapy button:disabled {
+  background-color: rgb(150, 150, 150);
+  cursor: not-allowed;
+}
+
+.book_therapy button:hover:enabled {
+  background-color: rgb(36, 76, 128);
+}
+
+/* Confirmation Bar */
+.confirmation-bar {
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  /* align-items: center; */
+  /* align-content: center; */
+}
+
+.confirmation-bar.hidden {
+  display: none;
+}
+.confirmation-bar span {
+  flex-grow: 1;
+}
+
+.confirmation-bar button {
+  background-color: rgb(255, 77, 77);
+  color: whitesmoke;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  flex-shrink: 0;
+  width: auto;
+  position: relative;
+  top: -8px;
+}
+
+#confirmationBar button:hover {
+  background-color: rgb(255, 4, 0);
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgb(48, 48, 48);
+  padding: 20px 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .left-column-footer h3 {
+  font-size: 22px;
+}
+
+/* Resource Page */
+/* .resources-heading1 {
+  margin: 100px 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+.resources-heading3 {
+  margin: 0 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.resources-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0px 50px;
+}
+.resources-sections h3 {
+  width: 100vb;
+  margin-bottom: 20px;
+}
+.resources-sections .card01,
+.resources-sections .card02,
+.resources-sections .card03,
+.resources-sections .card04 {
+  margin-right: 120px;
+  padding: 10px 0px;
+  text-align: justify;
+  flex-basis: 19%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.resources-sections .card05 {
+  flex-basis: 19%;
+  padding: 10px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sections-card-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.resources-sections a {
+  text-decoration: none;
+  color: black;
+} */
+
+/* Educational Resources Section */
+
+#resources {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #f9f9f9;
+}
+#resources h2 {
+  font-weight: bold;
+}
+.resources-grid {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between items */
+  gap: 50px; /* Space between items */
+  margin-top: 30px;
+}
+
+.resource-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1; /* Allows items to grow and take equal space */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column; /* Ensures that content stacks vertically */
+  justify-content: space-between; /* Spaces content evenly */
+  /* margin: 0 10px; Margin between each resource item */
+}
+.view-all {
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+}
+.resource-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9; /* Subtle background change */
+}
+
+.resource-image {
+  width: 100%;
+  height: 150px; /* You can adjust this based on aspect ratio needs */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.resource-item h3 {
+  color: #000;
+  margin: 15px 0 10px 0;
+  font-size: 1.2em;
+}
+
+.resource-item p {
+  font-size: 0.95em;
+  margin: 10px 0 20px 0;
+  color: #666;
+  flex: 1; /* Allows the paragraph to take up remaining space */
+}
+
+.resource-item .section-btn {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 15px; /* Space between paragraph and button */
+}
+
+.resource-item .section-btn:hover {
+  background-color: #004aad;
+}
+
+#video-library {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#video-library h2 {
+  font-weight: bold;
+}
+
+#podcasts {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#podcasts h2 {
+  font-weight: bold;
+}
+#downloadable-guides {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#downloadable-guides h2 {
+  font-weight: bold;
+}
+
+/* Self-Assesment */
+.self-assessment-title,
+.professional-director-title {
+  /*also contains professional director page */
+  display: flex;
+  margin: 100px 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.self-assessment-title h1 {
+  margin-right: 50px;
+}
+.self-assessment-title .self-assessment-categories button,
+.professional-director-title .professional-director-categories button {
+  margin: 2px 5px;
+  background-color: rgb(217, 217, 217);
+  border: none;
+  border-radius: 5px;
+}
+
+.self-assessment-activities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  margin-bottom: 20px;
+  position: relative;
+  /* border: 4px solid rgba(102, 102, 102, 0.195); */
+  /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); */
+  padding: 10px 40px;
+  /* border-radius: 5px; */
+  /* filter: blur(4px); */
+}
+.self-assessment-activities::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgba(0, 0, 0, 0.5); /* Border color and size */
+  border-radius: 10px; /* Optional: for rounded borders */
+  filter: blur(2px); /* The blur effect */
+  pointer-events: none; /* So that the blurred border doesn't block interaction */
+}
+.self-assessment-activities:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7; /* Subtle background change */
+}
+.self-assessment-activities .title-description {
+  max-width: 40%;
+  text-align: justify;
+  margin-right: 100px;
+}
+.self-assessment-activities .q-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+.self-assessment-activities .timer-question-number {
+  font-size: 20px;
+  color: rgb(55, 0, 255);
+}
+.self-assessment-activities .timer-question-number .timer {
+  color: rgb(255, 0, 0);
+}
+.self-assessment-activities button {
+  padding: 0 120px;
+  background-color: rgb(22, 50, 91);
+  color: whitesmoke;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 100px;
+}
+.self-assessment-activities button:hover {
+  background-color: rgb(36, 76, 128);
+}
+
+/* Community Forum */
+.community-forum-title {
+  margin: 0 50px;
+  margin-top: 100px;
+}
+
+.user-forum {
+  display: flex;
+
+  padding: 10px 40px;
+  margin: 20px 50px;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.user-forum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgba(0, 0, 0, 0.5); /* Border color and size */
+  border-radius: 10px; /* Optional: for rounded borders */
+  filter: blur(2px); /* The blur effect */
+  pointer-events: none;
+}
+.user-forum .user {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 40px;
+  position: relative;
+  top: 10px;
+}
+.user-forum .content {
+  text-align: justify;
+  margin-right: 40px;
+  border: 1px solid rgb(115, 115, 115);
+  padding: 20px 30px;
+  border-radius: 10px;
+  flex: 1;
+  position: relative;
+  top: 8px;
+  box-shadow: 5px 3px 10px rgb(170, 170, 170);
+  width: 70%;
+}
+.user-forum .interactions {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-forum .views,
+.user-forum .comments,
+.user-forum .likes {
+  display: flex;
+  align-items: center;
+}
+.user-forum .views p,
+.user-forum .comments p,
+.user-forum .likes p {
+  position: relative;
+  top: 10px;
+}
+
+.user-forum .interactions img {
+  width: 20px;
+}
+.user-forum .interactions button {
+  border: none;
+  margin-right: 10px;
+  background: none;
+}
+
+/* Professional Director */
+.recommended-doctor h4,
+.recommended-hospitals h4 {
+  margin-top: -20px;
+  text-align: center;
+}
+
+.professional-doctors {
+  margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 50px;
+}
+.professional-doctors img {
+  align-self: center;
+}
+.professional-doctors .card1,
+.professional-doctors .card2,
+.professional-doctors .card3 {
+  margin-right: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.215);
+  padding: 10px 20px;
+
+  flex-basis: 24%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.professional-doctors .card4 {
+  border: 3px solid rgba(0, 0, 0, 0.215);
+  padding: 10px 20px;
+
+  flex-basis: 24%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.professional-doctors .card-title {
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.professional-doctors .btn {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgb(22, 50, 91);
+  border: none;
+  /* margin-top: auto; */
+}
+
+.btn:hover {
+  background-color: rgb(36, 76, 128);
+}
+
+.recommended-hospitals {
+  margin: 40px 50px;
+  /* margin-bottom: 50px; */
+}
+.hospitals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hospitals .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+}
+.hospitals img {
+  width: 200px;
+}
+
+.hospitals .card-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Login Page */
+body.login-page .nav_bar a,
+body.login-page .nav_bar .login {
+  text-decoration: none;
+}
+
+/* Login Container Styles */
+.login-container {
+  max-width: 400px; /* Maximum width of the form */
+  margin: auto; /* Center the form */
+  margin-top: 20vh;
+  padding: 20px; /* Padding inside the form */
+  background-color: white; /* White background for form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 15px; /* Space between form elements */
+}
+
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Full width of input */
+  padding: 10px; /* Padding inside input */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #004aad; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Login Button Styles */
+.login-btn {
+  background-color: #000; /* Button color */
+  color: white; /* Text color */
+  padding: 10px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width of button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.login-btn:hover {
+  background-color: #004aad; /* Darker blue on hover */
+}
